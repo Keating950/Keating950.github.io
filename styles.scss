@@ -1,0 +1,43 @@
+@use "menu";
+@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
+
+$dark_indigo: #1A323D;
+$term_green: #41BC18;
+$neon_green: #58FF21;
+$cream: #EFE7BA;
+
+body {
+    background-color: $dark_indigo;
+    color: $cream;
+    margin-left: 64px;
+    font-family: 'Fira Code';
+}
+
+header_title {
+    font-weight: bold;
+    font-size: 200%;
+    color: $term_green;
+}
+
+post_title {
+    font-size: 175%;
+    color: $cream;
+}
+
+img.post_img {
+    display: block;
+    padding-bottom: 36px;
+}
+
+.container {
+  max-width: 70rem;
+  > p {
+          max-width: 55rem;
+    }
+}
+
+.container,
+.container-fluid {
+  margin: 36 auto;
+  padding: 0 1rem;
+}

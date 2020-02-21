@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
+.menu {
+  padding-bottom: 36px;
+  color: #41BC18;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.menu ul li {
+  display: inline;
+  text-overflow: ellipsis;
+  white-space: pre;
+  overflow: hidden;
+  padding-right: 40px;
+  padding-bottom: 0px;
+}
+.menu ul li:hover {
+  color: #58FF21;
+  text-decoration: underline;
+}
+
+.menu::before {
+  text-overflow: ellipsis;
+  white-space: pre;
+  overflow: hidden;
+  content: "----------------------------------------------------------------------------------------------------------------------\a";
+}
+
+.menu::after {
+  text-overflow: ellipsis;
+  white-space: pre;
+  overflow: hidden;
+  content: "----------------------------------------------------------------------------------------------------------------------";
+}
+
+body {
+  background-color: #1A323D;
+  color: #EFE7BA;
+  margin-left: 64px;
+  font-family: "Fira Code";
+}
+
+header_title {
+  font-weight: bold;
+  font-size: 200%;
+  color: #41BC18;
+}
+
+post_title {
+  font-size: 175%;
+  color: #EFE7BA;
+}
+
+img.post_img {
+  display: block;
+  padding-bottom: 36px;
+}
+
+.container {
+  max-width: 70rem;
+}
+.container > p {
+  max-width: 55rem;
+}
+
+.container,
+.container-fluid {
+  margin: 36 auto;
+  padding: 0 1rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

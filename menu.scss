@@ -1,0 +1,50 @@
+$neon_green: #58FF21;
+$term_green: #41BC18;
+
+
+@function make_hyph_divider($top) {
+    $divider: '----------------------------------------------------------------------------------------------------------------------';
+    @if $top {
+        $divider: str-insert($divider, "\A", str-length($divider)+1)
+    }
+    @return $divider;
+}
+
+
+.menu {
+    padding-bottom: 36px;
+    color: $term_green;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        
+        li {    
+            display: inline;
+            text-overflow: ellipsis;
+            white-space: pre;
+            overflow: hidden;
+            padding-right: 40px;
+            padding-bottom: 0px;
+            &:hover {
+                color: $neon_green;
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+
+@mixin menu_divider {
+    text-overflow: ellipsis;
+    white-space: pre;
+    overflow: hidden;
+}
+.menu::before {
+    @include menu_divider;
+    content: make_hyph_divider(true);
+}
+.menu::after {
+    @include menu_divider;
+    content: make_hyph_divider(false);
+}

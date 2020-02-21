@@ -1,0 +1,37 @@
+.menu {
+  padding-bottom: 36px;
+  color: #41BC18;
+}
+.menu ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+.menu ul li {
+  display: inline;
+  text-overflow: ellipsis;
+  white-space: pre;
+  overflow: hidden;
+  padding-right: 40px;
+  padding-bottom: 0px;
+}
+.menu ul li:hover {
+  color: #58FF21;
+  text-decoration: underline;
+}
+
+.menu::before {
+  text-overflow: ellipsis;
+  white-space: pre;
+  overflow: hidden;
+  content: "----------------------------------------------------------------------------------------------------------------------\a";
+}
+
+.menu::after {
+  text-overflow: ellipsis;
+  white-space: pre;
+  overflow: hidden;
+  content: "----------------------------------------------------------------------------------------------------------------------";
+}
+
+/*# sourceMappingURL=menu.css.map */
