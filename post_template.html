@@ -1,22 +1,22 @@
 <!DOCTYPE html>
+<html>
 <head>
     <html lang="en">
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-<title>Keating K. Reid</title>
+    <title>Keating K. Reid</title>
 </head>
     
 <header_title>Keating K. Reid</header_title>
 <div class="menu">
     <ul>
         <li>10 years of /r/McGill</li>
-        <li>Foobar Baz: A lifestyle</li>
+        <li class="active">Foobar Baz: A lifestyle</li>
         <li> About and contact</li>
     </ul>
 </div>
 
 <body class="container">
-    
     <!--   Placeholder Image -->
     <img class="post_img" src="https://via.placeholder.com/600x350">
     
@@ -24,17 +24,17 @@
     <script> 
         function underlineTitle() {
             "use strict";
-            const underline = "<br>" 
+            const underline = "<br>"
                             + "=".repeat(document.getElementById("post_title")
-                                         .textContent.length)
+                                                 .textContent.length)
                             + "<br>";
             const contents = document.getElementById("post_title").innerHTML;
             document.getElementById("post_title")
                     .innerHTML = contents+underline;
         }
-        window.document.onload = underlineTitle(); 
+        window.document.onload = underlineTitle();
     </script>
-    
+
     <p>
          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ut ex id mi blandit scelerisque sed sit amet orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras sit amet lacus pretium, posuere tellus in, sodales velit. Nam cursus felis risus, nec tristique tortor condimentum a. Suspendisse fringilla lectus eget vestibulum malesuada. Suspendisse tristique lorem sit amet ante viverra, vel semper nunc condimentum. Ut at malesuada odio, id blandit augue. Donec fermentum convallis mollis. Curabitur at lacus in urna dapibus fringilla.
     </p> 
@@ -50,5 +50,5 @@
     <p>
         Nunc sollicitudin euismod volutpat. Phasellus fringilla mollis viverra. Aenean et enim fermentum, scelerisque eros quis, malesuada mauris. Curabitur egestas neque ut risus suscipit, ut malesuada nibh bibendum. Aenean vel eros eget velit tempus congue. Morbi in finibus odio, lobortis viverra urna. Nulla tincidunt enim ante, sit amet blandit erat iaculis eu. Fusce sodales at arcu pellentesque placerat. Proin ultricies ornare diam ultrices venenatis. Praesent augue nisi, dapibus maximus nunc et, imperdiet luctus orci. Pellentesque sollicitudin eleifend enim eu dictum. Sed cursus libero id felis suscipit fringilla.
     </p>
-    
 </body>
+</html>

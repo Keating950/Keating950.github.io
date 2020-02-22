@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
 
 $dark_indigo: #1A323D;
-$term_green: #41BC18;
-$neon_green: #58FF21;
-$cream: #EFE7BA;
+$term_green:  #00ff00;
+$neon_green:  #58FF21;
+$cream:       #EFE7BA;
+$rose:        #E0607E;
 
 body {
     background-color: $dark_indigo;
@@ -38,6 +39,6 @@ img.post_img {
 
 .container,
 .container-fluid {
-  margin: 36 auto;
+  margin: 36px auto;
   padding: 0 1rem;
 }

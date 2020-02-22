@@ -1,6 +1,10 @@
-$neon_green: #58FF21;
-$term_green: #41BC18;
-
+$dark_indigo: #1A323D;
+//$term_green:  #41BC18;
+$term_green: #00ff00;
+$neon_green:  #58FF21;
+$cream:       #EFE7BA;
+//$rose:        #E0607E;
+$rose: #c0c0c0;
 
 @function make_hyph_divider($top) {
     $divider: '----------------------------------------------------------------------------------------------------------------------';
@@ -12,23 +16,30 @@ $term_green: #41BC18;
 
 
 .menu {
-    padding-bottom: 36px;
     color: $term_green;
+    padding-bottom: 36px;
+    
     ul {
         margin: 0;
         padding: 0;
         list-style-type: none;
+        white-space: nowrap;
         
         li {    
-            display: inline;
             text-overflow: ellipsis;
-            white-space: pre;
-            overflow: hidden;
+            display: inline;
+            white-space: inherit;
             padding-right: 40px;
             padding-bottom: 0px;
+            
             &:hover {
                 color: $neon_green;
                 text-decoration: underline;
+            }
+            
+            &.active {
+//                background-color: $rose;
+                color: $rose;
             }
         }
     }
@@ -36,9 +47,9 @@ $term_green: #41BC18;
 
 
 @mixin menu_divider {
-    text-overflow: ellipsis;
     white-space: pre;
     overflow: hidden;
+    position: relative;
 }
 .menu::before {
     @include menu_divider;
