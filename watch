@@ -1,1 +1,1 @@
-sass --watch styles.scss:css/styles.css menu.scss:css/menu.css
+sass --watch styles.scss:css/styles.css 

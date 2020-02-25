@@ -1,77 +1,95 @@
 @import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
-.menu {
-  color: #00ff00;
-  padding-bottom: 36px;
+body {
+  background-color: #1A323D;
+  color: #EFE7BA;
+  font-family: "Fira Code";
 }
-.menu ul {
+
+.navbar_title a {
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 32px;
+  color: #00ff00;
+  text-decoration: none;
+  margin: 0;
+}
+
+.navbar {
+  color: #00ff00;
+  border-style: dashed;
+  border-color: #00ff00;
+  border-width: 2px 0px;
+  width: 880px;
+  margin: 8px 0 36px 0;
+  line-height: 180%;
+  overflow: hidden;
+}
+.navbar ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
   white-space: nowrap;
 }
-.menu ul li {
+.navbar ul li {
   text-overflow: ellipsis;
   display: inline;
+  margin-right: 40px;
   white-space: inherit;
-  padding-right: 40px;
-  padding-bottom: 0px;
 }
-.menu ul li:hover {
-  color: #58FF21;
+.navbar ul li:hover {
   text-decoration: underline;
 }
-.menu ul li.active {
-  color: #c0c0c0;
+.navbar ul li.current {
+  color: #C0C0C0;
+}
+.navbar ul li:last-of-type {
+  margin-right: 0;
+}
+.navbar ul li a {
+  color: inherit;
+  text-decoration: inherit;
 }
 
-.menu::before {
-  white-space: pre;
-  overflow: hidden;
-  position: relative;
-  content: "----------------------------------------------------------------------------------------------------------------------\a";
+.title_container {
+  padding-top: 10px;
 }
-
-.menu::after {
-  white-space: pre;
-  overflow: hidden;
-  position: relative;
-  content: "----------------------------------------------------------------------------------------------------------------------";
-}
-
-body {
-  background-color: #1A323D;
-  color: #EFE7BA;
-  margin-left: 64px;
-  font-family: "Fira Code";
-}
-
-header_title {
-  font-weight: bold;
-  font-size: 200%;
-  color: #00ff00;
-}
-
-post_title {
+.title_container .post_title {
   font-size: 175%;
-  color: #EFE7BA;
+}
+.title_container .post_title_underline {
+  font-size: 175%;
+  margin-top: -45px;
 }
 
 img.post_img {
   display: block;
   padding-bottom: 36px;
+  max-width: 880px;
 }
 
 .container {
-  max-width: 70rem;
+  max-width: 700rem;
+  margin-left: 128px;
 }
 .container > p {
   max-width: 55rem;
 }
+.container > p a {
+  color: #00FFFF;
+}
 
 .container,
 .container-fluid {
-  margin: 36px auto;
+  margin: 36px 10%;
   padding: 0 1rem;
+}
+
+footer {
+  font-size: 50%;
+  text-align: center;
+  opacity: 50%;
+  align-self: center;
+  margin: 64px 0 24px 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

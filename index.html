@@ -6,18 +6,44 @@
 <title>Keating K. Reid</title>
 </head>
     
-<header_title>Keating K. Reid</header_title>
-<div class="menu">
+<div class="navbar_title"><a href="index.html">Keating K. Reid</a></div>
+<div class="navbar">
     <ul>
-        <li>10 years of /r/McGill</li>
-        <li>Foobar Baz: A lifestyle</li>
-        <li>About and contact</li>
+        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="10_years_of_rmcgill.html">Article: "Ask me Anything"</li></a>
+    <li><a href="post_template.html">Foobar Baz: A lifestyle</a></li>
+<!--        <li>About and contact</li>-->
     </ul>
 </div>
     
 <body class="container">
-    <p>Hello, world!</p>    
+    <div class="title_container">
+        <span class="post_title" id="post_title">Who am I?</span>
+        <div class="post_title_underline" id="post_title_underline">&nbsp;</div>
+        <script> 
+            function underlineTitle() {
+                "use strict";
+                const contents = document.getElementById("post_title").innerHTML;
+                const underline = "<br>" 
+                                + "=".repeat(document.getElementById("post_title")
+                                             .textContent.length)
+                                + "<br>";
+                document.getElementById("post_title_underline")
+                        .innerHTML = underline;
+            }
+            window.document.onload = underlineTitle();
+        </script>
+    </div>
+        
+        <p id="contains_liame">
+            My name is Keating, and I'm a programmer with experience in software 
+            development, data science, and machine learning. My favourite
+            languages are Python and C, but I'm always looking to learn more.
+            Links to some examples of my work are above. To get in touch, send
+            me an email $PLACEHOLDER_VALUE$.
+        </p>
+        <script src="replacer.js">&nbsp;</script>
+    </div>
+    <footer>Copyright © 2020 Keating Kenna Reid.</footer>
 </body>
-
-
 </html>

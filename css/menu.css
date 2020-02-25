@@ -1,6 +1,10 @@
 .menu {
   color: #00ff00;
-  padding-bottom: 36px;
+  border-style: dashed;
+  border-color: #00ff00;
+  border-width: 2px 0px;
+  margin: 8px 0 36px 0;
+  line-height: 180%;
 }
 .menu ul {
   margin: 0;
@@ -16,25 +20,10 @@
   padding-bottom: 0px;
 }
 .menu ul li:hover {
-  color: #58FF21;
   text-decoration: underline;
 }
 .menu ul li.active {
   color: #c0c0c0;
-}
-
-.menu::before {
-  white-space: pre;
-  overflow: hidden;
-  position: relative;
-  content: "----------------------------------------------------------------------------------------------------------------------\a";
-}
-
-.menu::after {
-  white-space: pre;
-  overflow: hidden;
-  position: relative;
-  content: "----------------------------------------------------------------------------------------------------------------------";
 }
 
 /*# sourceMappingURL=menu.css.map */

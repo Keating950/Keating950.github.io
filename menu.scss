@@ -1,23 +1,16 @@
 $dark_indigo: #1A323D;
-//$term_green:  #41BC18;
-$term_green: #00ff00;
-$neon_green:  #58FF21;
+$term_green:  #00ff00;
 $cream:       #EFE7BA;
-//$rose:        #E0607E;
-$rose: #c0c0c0;
-
-@function make_hyph_divider($top) {
-    $divider: '----------------------------------------------------------------------------------------------------------------------';
-    @if $top {
-        $divider: str-insert($divider, "\A", str-length($divider)+1)
-    }
-    @return $divider;
-}
-
+$grey:        #c0c0c0;
 
 .menu {
     color: $term_green;
-    padding-bottom: 36px;
+    border-style: dashed;
+    border-color: $term_green;
+    border-width: 2px 0px;
+//    padding: 4px 0 4px 0;
+    margin: 8px 0 36px 0;
+    line-height: 180%;
     
     ul {
         margin: 0;
@@ -25,7 +18,7 @@ $rose: #c0c0c0;
         list-style-type: none;
         white-space: nowrap;
         
-        li {    
+        li {
             text-overflow: ellipsis;
             display: inline;
             white-space: inherit;
@@ -33,29 +26,12 @@ $rose: #c0c0c0;
             padding-bottom: 0px;
             
             &:hover {
-                color: $neon_green;
                 text-decoration: underline;
             }
             
             &.active {
-//                background-color: $rose;
-                color: $rose;
+                color: $grey;
             }
         }
     }
-}
-
-
-@mixin menu_divider {
-    white-space: pre;
-    overflow: hidden;
-    position: relative;
-}
-.menu::before {
-    @include menu_divider;
-    content: make_hyph_divider(true);
-}
-.menu::after {
-    @include menu_divider;
-    content: make_hyph_divider(false);
 }
