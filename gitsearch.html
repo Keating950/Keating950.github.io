@@ -1,23 +1,27 @@
 <!DOCTYPE html>
+<html>
 <head>
     <html lang="en">
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
-<title>Keating K. Reid</title>
+    <title>Keating K. Reid</title>
 </head>
-    
+
 <div class="navbar_title"><a href="index.html">Keating K. Reid</a></div>
 <div class="navbar">
     <ul>
-        <li class="current"><a href="index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="10_years_of_rmcgill.html">Article: "Ask me Anything"</li></a>
-    <li><a href="Gitsearch.html">Gitsearch</a></li>
+        <li class="current"><a href="gitsearch.html">Gitsearch</a></li>
     </ul>
 </div>
-    
+
 <body class="container">
+    <!--   placeholder image -->
+    <img class="post_img" src="media/gitsearch_ui.png">
+    
     <div class="title_container">
-        <span class="post_title" id="post_title">Who am I?</span>
+        <span class="post_title" id="post_title">Gitsearch</span>
         <div class="post_title_underline" id="post_title_underline">&nbsp;</div>
         <script> 
             function underlineTitle() {
@@ -30,19 +34,17 @@
                 document.getElementById("post_title_underline")
                         .innerHTML = underline;
             }
-            window.document.onload = underlineTitle();
+            window.document.onload = underlineTitle(); 
         </script>
     </div>
-        
-        <p id="contains_liame">
-            My name is Keating, and I'm a programmer with experience in software 
-            development, data science, and machine learning. My favourite
-            languages are Python and C, but I'm always looking to learn more.
-            Links to some examples of my work are above. To get in touch, send
-            me an email $PLACEHOLDER_VALUE$.
-        </p>
-        <script src="replacer.js">&nbsp;</script>
-    </div>
+    
+    <p>
+        Gitsearch is a simple command line program for searching for and cloning repos from Github. I wrote the program in Python,
+        developing the interface in curses and using GitHub's public API for the search and clone features. Given the difficulties
+        of Python packaging and dependency management, I strived to minimize external dependencies; Gitsearch has only one,
+        the highly popular <a href="https://requests.readthedocs.io/en/master/" target="_blank">Requests</a> library.
+    </p>
+    
     <footer>Copyright © 2020 Keating Kenna Reid.</footer>
 </body>
 </html>
