@@ -85,9 +85,11 @@ img.post_img {
 }
 
 footer {
+  display: block;
   font-size: 50%;
   text-align: center;
   opacity: 35%;
+  webkit-opacity: 0.35;
   align-self: center;
   margin: 64px 0 24px 0;
 }

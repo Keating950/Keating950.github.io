@@ -41,8 +41,14 @@
             Links to some examples of my work are above. To get in touch, send
             me an email <a href="#" id="comms">here</a>.
         </p>
-        <script src="replacer.js">&nbsp;</script>
-    </div>
-    <footer>Copyright © 2020 Keating Kenna Reid.</footer>
+    
+    <footer>&nbsp;</footer>
+    <script type="text/javascript">
+        "use strict";
+        window.onload = function () {
+            document.getElementsByTagName("footer")[0].textContent=
+                `Copyright © ${new Date().getFullYear()} Keating Kenna Reid.`
+        }
+    </script>
 </body>
 </html>
