@@ -76,22 +76,27 @@ body {
     }
 }
 
-img.post_img {
-    display: block;
-    padding-bottom: 36px;
-    max-width: 880px;
-    
-    div.row {
-        display: inline;
-        max-width: inherit;
+
+.multi_img_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: center;
+    .item {
+        flex: flex-basis;
+        width: 90%;
+        
     }
 }
 
-
-img.iframe_tb {
-    max-width: 380px;
+.caption {
+    font-size: 85%;
+    opacity: 70%;
+    margin: 5px 0 20px; 
 }
-        
+
 .container {
   max-width: 700rem;
   margin-left: 128px;
@@ -108,6 +113,13 @@ img.iframe_tb {
 .container-fluid {
   margin: 36px 10%;
   padding: 0 1rem;
+    
+    img.post_img {
+        display: block;
+        padding-bottom: 36px;
+        max-width: 880px;
+    }
+    
 }
 
 
