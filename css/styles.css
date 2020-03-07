@@ -68,6 +68,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   align-content: center;
+  width: 880px;
 }
 .multi_img_container .item {
   flex: flex-basis;
