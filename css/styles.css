@@ -65,14 +65,58 @@ body {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  align-content: center;
+  align-content: space-between;
+  align-self: center;
   width: 880px;
 }
 .multi_img_container .item {
   flex: flex-basis;
-  width: 90%;
+}
+
+/** LIGHTBOX MARKUP **/
+.thumbnail {
+  max-width: 95%;
+}
+
+.lightbox {
+  /** Default lightbox to hidden */
+  display: none;
+  /** Position and style */
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
+  /** Unhide lightbox **/
+  display: block;
+}
+
+.lightbox img {
+  /** Pad the lightbox image */
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
+}
+
+.lightbox_iframe {
+  height: 544px;
+  width: 1028px;
+  margin: 0;
+}
+
+#posts_per_year {
+  height: 524 px;
+  width: 514 px;
 }
 
 .caption {
@@ -93,13 +137,11 @@ body {
   color: #00FFFF;
 }
 
-.container,
-.container-fluid {
+.container, .container-fluid {
   margin: 36px 10%;
   padding: 0 1rem;
 }
-.container img.post_img,
-.container-fluid img.post_img {
+.container img.post_img, .container-fluid img.post_img {
   display: block;
   padding-bottom: 36px;
   max-width: 880px;

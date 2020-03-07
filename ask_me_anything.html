@@ -17,17 +17,32 @@
 
 <body class="container">
     
-    <div class=multi_img_container>
-    
-        <a href="iframe_figures/posts_per_year.html">
-            <img src="media/thumbnails/posts_per_year_tb.png"
-                 class="item">
+    <div class="multi_img_container">
+        
+        <!-- Item 1 -->
+        <a href=#img1>
+            <img src="media/thumbnails/posts_per_year_tb.png" 
+                 class="thumbnail">
         </a>
-        <a href="iframe_figures/upvotes_by_time.html">
-          <img src="media/thumbnails/upvotes_by_time_tb.png"
-               class="item">
+        <a href="#_" class="lightbox" id="img1">
+            <iframe src="iframe_figures/posts_per_year.html" 
+                    class="lightbox_iframe" 
+                    id="posts_per_year"></iframe>
         </a>
+        
+        <!-- Item 2 -->
+        <a href=#img2>
+          <img src="media/thumbnails/upvotes_by_time_tb.png" 
+               class="thumbnail">
+        </a>
+        <a href="#_" class="lightbox" id="img2">
+            <iframe src="iframe_figures/upvotes_by_time.html" 
+                    class="lightbox_iframe"
+                    id="upvotes_by_time"></iframe>
+        </a>
+        
     </div>
+        
     <p class="caption">Click images to view interactively.</p>
     
     <div class="title_container">
