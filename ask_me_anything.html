@@ -35,21 +35,21 @@ Anything"</li></a> <li><a href="gitsearch.html">Gitsearch</a></li> </ul>
     <p class="caption">Click images to view interactively.</p>
     
     <div class="title_container"> 
-        <span class="post_title" id="post_title">
-            Ask me Anything
-        </span> 
-        <div class="post_title_underline"id="post_title_underline">&nbsp;</div> 
-        <script>
-           function underlineTitle() {
-                "use strict";
-                const contents = document.getElementById("post_title").innerHTML;
-                const underline = "<br>" 
-                    + "=".repeat(document.getElementById("post_title").textContent.length) 
-                    + "<br>";
-                document.getElementById("post_title_underline").innerHTML = underline;
-            }
-            window.document.onload = underlineTitle(); 
-        </script> 
+        <span class="post_title" id="post_title">Ask me Anything</span> 
+        <div class="post_title_underline"id="post_title_underline">&nbsp;</div>
+        
+            <script>
+               function underlineTitle() {
+                    "use strict";
+                    const contents = document.getElementById("post_title").innerHTML;
+                    const underline = "<br>" 
+                        + "=".repeat(document.getElementById("post_title").textContent.length) 
+                        + "<br>";
+                    document.getElementById("post_title_underline").innerHTML = underline;
+                    console.log(document.getElementById("post_title").textContent);
+                }
+                window.document.onload = underlineTitle(); 
+            </script> 
     </div>
     
     <p> "<a href="http://www.mcgilltribune.com/ask-me-anything/"
