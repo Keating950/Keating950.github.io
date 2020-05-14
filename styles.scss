@@ -178,5 +178,8 @@ footer {
     opacity: 35%;
     webkit-opacity: 0.35;
     align-self: center;
-    margin: 64px 0 24px 0; //    position: fixed;
+    margin: 64px 0 24px 0;
+    a {
+        color: $cream;
+    }
 }

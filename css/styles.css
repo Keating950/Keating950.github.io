@@ -156,5 +156,8 @@ footer {
   align-self: center;
   margin: 64px 0 24px 0;
 }
+footer a {
+  color: #EFE7BA;
+}
 
 /*# sourceMappingURL=styles.css.map */
