@@ -1,8 +1,7 @@
-$dark_indigo: #1D2D44;
-$term_green: #00ff00;
-$neon_green: #58FF21;
-$cream: #EFE7BA;
-$grey: #C0C0C0;
+$background: #282828;
+$green: #B8BB26;
+$foreground: #FBF1C7;
+$grey: #A89984;
 
 @font-face {
     font-family: 'Fira Code';
@@ -10,8 +9,8 @@ $grey: #C0C0C0;
 }
 
 body {
-    background-color: $dark_indigo;
-    color: $cream;
+    background-color: $background;
+    color: $foreground;
     font-family: 'Fira Code';
 }
 
@@ -20,16 +19,16 @@ body {
     white-space: nowrap;
     font-weight: bold;
     font-size: 260%;
-    color: $term_green;
+    color: $green;
     text-decoration: none;
     margin: 0;
 }
 
 
 .navbar {
-    color: $term_green;
+    color: $green;
     border-style: dashed;
-    border-color: $term_green;
+    border-color: $green;
     border-width: 2px 0px;
     width: 880px;
     margin: 8px 0 36px 0;
@@ -184,6 +183,6 @@ footer {
     align-self: center;
     margin: 64px 0 24px 0;
     a {
-        color: $cream;
+        color: $foreground;
     }
 }

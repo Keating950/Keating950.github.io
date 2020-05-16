@@ -1,12 +1,12 @@
-$dark_indigo: #1A323D;
-$term_green:  #00ff00;
-$cream:       #EFE7BA;
-$grey:        #c0c0c0;
+$background:	#1A323D;
+$green:			#B8BB26;
+$foreground:			#FBF1C7;
+$grey:			#928374;
 
 .menu {
-    color: $term_green;
+    color: $green;
     border-style: dashed;
-    border-color: $term_green;
+    border-color: $green;
     border-width: 2px 0px;
 //    padding: 4px 0 4px 0;
     margin: 8px 0 36px 0;

@@ -3,8 +3,8 @@
   src: url("FiraCode-Regular.woff2");
 }
 body {
-  background-color: #1D2D44;
-  color: #EFE7BA;
+  background-color: #282828;
+  color: #FBF1C7;
   font-family: "Fira Code";
 }
 
@@ -12,15 +12,15 @@ body {
   white-space: nowrap;
   font-weight: bold;
   font-size: 260%;
-  color: #00ff00;
+  color: #B8BB26;
   text-decoration: none;
   margin: 0;
 }
 
 .navbar {
-  color: #00ff00;
+  color: #B8BB26;
   border-style: dashed;
-  border-color: #00ff00;
+  border-color: #B8BB26;
   border-width: 2px 0px;
   width: 880px;
   margin: 8px 0 36px 0;
@@ -43,7 +43,7 @@ body {
   text-decoration: underline;
 }
 .navbar ul li.current {
-  color: #C0C0C0;
+  color: #A89984;
 }
 .navbar ul li:last-of-type {
   margin-right: 0;
@@ -160,7 +160,7 @@ footer {
   margin: 64px 0 24px 0;
 }
 footer a {
-  color: #EFE7BA;
+  color: #FBF1C7;
 }
 
 /*# sourceMappingURL=styles.css.map */
