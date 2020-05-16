@@ -1,9 +1,13 @@
-@import url('https://fonts.googleapis.com/css?family=Fira+Code&display=swap');
 $dark_indigo: #1D2D44;
 $term_green: #00ff00;
 $neon_green: #58FF21;
 $cream: #EFE7BA;
 $grey: #C0C0C0;
+
+@font-face {
+    font-family: 'Fira Code';
+    src: url('FiraCode-Regular.woff2');
+}
 
 body {
     background-color: $dark_indigo;

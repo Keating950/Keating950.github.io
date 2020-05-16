@@ -1,4 +1,7 @@
-@import url("https://fonts.googleapis.com/css?family=Fira+Code&display=swap");
+@font-face {
+  font-family: "Fira Code";
+  src: url("FiraCode-Regular.woff2");
+}
 body {
   background-color: #1D2D44;
   color: #EFE7BA;
