@@ -11,6 +11,7 @@ body {
 hr {
   margin: 2em 0;
   border-color: #FBF1C7;
+  opacity: 0.5;
 }
 
 .navbar_title a {
