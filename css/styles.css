@@ -8,6 +8,11 @@ body {
   font-family: "Fira Code";
 }
 
+hr {
+  margin: 2em 0;
+  border-color: #FBF1C7;
+}
+
 .navbar_title a {
   white-space: nowrap;
   font-weight: bold;
