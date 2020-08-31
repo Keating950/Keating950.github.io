@@ -1,1 +1,172 @@
-@font-face{font-family:"Fira Code";src:url("FiraCode-Regular.woff2")}body{background-color:#282828;color:#fbf1c7;font-family:"Fira Code"}hr{margin:2em 0;border-color:#fbf1c7;opacity:.5}.navbar_title a{white-space:nowrap;font-weight:bold;font-size:260%;color:#b8bb26;text-decoration:none;margin:0}.navbar{color:#b8bb26;border-style:dashed;border-color:#b8bb26;border-width:2px 0px;width:880px;margin:8px 0 36px 0;line-height:180%;overflow:hidden}.navbar ul{margin:0;padding:0;list-style-type:none;white-space:nowrap}.navbar ul li{text-overflow:ellipsis;display:inline;margin-right:40px;white-space:inherit}.navbar ul li:hover{text-decoration:underline}.navbar ul li.current{color:#a89984}.navbar ul li:last-of-type{margin-right:0}.navbar ul li a{color:inherit;text-decoration:inherit}.title_container{padding-top:10px}.title_container .post_title{font-size:175%}.title_container .post_title_underline{font-size:175%;margin-top:-45px}.multi_img_container{display:flex;flex-direction:row;flex-wrap:nowrap;justify-content:space-between;align-items:center;align-content:space-between;align-self:center;width:880px}.multi_img_container .item{flex:flex-basis}.thumbnail{max-width:95%}.lightbox{display:none;position:fixed;z-index:999;width:100%;height:100%;text-align:center;top:0;left:0;background:rgba(0,0,0,.8)}.lightbox:target{outline:none;display:block}.lightbox img{max-width:90%;max-height:80%;margin-top:2%}.lightbox_iframe{height:544px;width:1028px;margin:0}#posts_per_year{height:524 px;width:514 px}.caption{font-size:85%;opacity:70%;padding-bottom:6px;max-width:880px}.container{max-width:700rem;margin-left:128px}.container>p{max-width:55rem}.container>p a{color:aqua}.container,.container-fluid{margin:36px 10%;padding:0 1rem}.container img.post_img,.container-fluid img.post_img{display:block;padding-bottom:36px;max-width:880px}footer{display:block;font-size:50%;text-align:center;opacity:35%;webkit-opacity:.35;align-self:center;margin:64px 0 24px 0}footer a{color:#fbf1c7}/*# sourceMappingURL=styles.css.map */
+@font-face {
+  font-family: "Fira Code";
+  src: url("FiraCode-Regular.woff2");
+}
+body {
+  background-color: #282828;
+  color: #FBF1C7;
+  font-family: "Fira Code";
+}
+
+hr {
+  margin: 2em 0;
+  border-color: #FBF1C7;
+  opacity: 0.5;
+}
+
+.navbar_title a {
+  white-space: nowrap;
+  font-weight: bold;
+  font-size: 260%;
+  color: #B8BB26;
+  text-decoration: none;
+  margin: 0;
+}
+
+.navbar {
+  color: #B8BB26;
+  border-style: dashed;
+  border-color: #B8BB26;
+  border-width: 2px 0px;
+  width: 60vw;
+  margin: 8px 0 36px 0;
+  line-height: 180%;
+  overflow: hidden;
+}
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  white-space: nowrap;
+}
+.navbar ul li {
+  text-overflow: ellipsis;
+  display: inline;
+  margin-right: 40px;
+  white-space: inherit;
+}
+.navbar ul li:hover {
+  text-decoration: underline;
+}
+.navbar ul li.current {
+  color: #A89984;
+}
+.navbar ul li:last-of-type {
+  margin-right: 0;
+}
+.navbar ul li a {
+  color: inherit;
+  text-decoration: inherit;
+}
+
+.title_container {
+  padding-top: 10px;
+}
+.title_container .post_title {
+  font-size: 175%;
+}
+.title_container .post_title_underline {
+  font-size: 175%;
+  margin-top: -45px;
+}
+
+.multi_img_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-between;
+  align-self: center;
+  width: 60vw;
+}
+.multi_img_container .item {
+  flex: flex-basis;
+}
+
+/** LIGHTBOX MARKUP **/
+.thumbnail {
+  max-width: 95%;
+}
+
+.lightbox {
+  /** Default lightbox to hidden */
+  display: none;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox:target {
+  /** Remove default browser outline */
+  outline: none;
+  display: block;
+}
+
+.lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  margin-top: 2%;
+}
+
+.lightbox_iframe {
+  height: 544px;
+  width: 1028px;
+  margin: 0;
+}
+
+#posts_per_year {
+  height: 524 px;
+  width: 514 px;
+}
+
+.caption {
+  font-size: 85%;
+  opacity: 70%;
+  padding-bottom: 6px;
+  max-width: 880px;
+}
+
+.container {
+  max-width: 60vw;
+  margin-left: 5vw;
+}
+.container > p {
+  max-width: 55rem;
+}
+.container > p a {
+  color: #00FFFF;
+}
+.container hr {
+  max-width: 55rem;
+}
+
+.container, .container-fluid {
+  margin: 36px 10%;
+  padding: 0 1rem;
+}
+.container img.post_img, .container-fluid img.post_img {
+  display: block;
+  padding-bottom: 36px;
+  max-width: 880px;
+}
+
+footer {
+  display: block;
+  font-size: 50%;
+  text-align: center;
+  opacity: 35%;
+  webkit-opacity: 0.35;
+  align-self: center;
+  margin: 64px 0 24px 0;
+}
+footer a {
+  color: #FBF1C7;
+}
+
+/*# sourceMappingURL=styles.css.map */

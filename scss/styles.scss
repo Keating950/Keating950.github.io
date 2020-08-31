@@ -34,7 +34,7 @@ hr {
     border-style: dashed;
     border-color: $green;
     border-width: 2px 0px;
-    width: 880px;
+    width: 60vw;
     margin: 8px 0 36px 0;
     line-height: 180%;
     overflow: hidden;
@@ -84,7 +84,7 @@ hr {
     align-items: center;
     align-content: space-between;
     align-self: center;
-    width: 880px;
+    width: 60vw;
     .item {
         flex: flex-basis;
     }
@@ -140,13 +140,16 @@ hr {
 }
 
 .container {
-    max-width: 700rem;
-    margin-left: 128px;
+    max-width: 60vw;
+    margin-left: 5vw;
     >p {
         max-width: 55rem;
         a {
             color: #00FFFF;
         }
+    }
+    hr {
+        max-width: 55rem;
     }
 }
 
