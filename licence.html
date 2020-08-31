@@ -20,17 +20,14 @@
         <span class="post_title" id="post_title">Licence</span>
         <div class="post_title_underline" id="post_title_underline">&nbsp;</div>
         <script> 
-            function underlineTitle() {
-                "use strict";
-                const contents = document.getElementById("post_title").innerHTML;
-                const underline = "<br>" 
-                                + "=".repeat(document.getElementById("post_title")
-                                             .textContent.length)
-                                + "<br>";
-                document.getElementById("post_title_underline")
-                        .innerHTML = underline;
-            }
-            window.document.onload = underlineTitle();
+        "use strict";
+        window.addEventListener("DOMContentLoaded", () => {
+            document.getElementById("post_title_underline")
+                    .innerHTML = "<br>"
+                               + "=".repeat(document.getElementById("post_title")
+                                                    .textContent.length)
+                               + "<br>";
+        });
         </script>
     </div>
         <p>
