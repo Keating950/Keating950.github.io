@@ -1,54 +1,54 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <html lang="en">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Keating K. Reid</title>
+	<meta charset="UTF-8">
+	<html lang="en">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Keating K. Reid</title>
 </head>
 
 <div class="navbar_title"><a href="index.html">Keating K. Reid</a></div>
 <div class="navbar">
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="ask_me_anything.html">Article: "Ask me Anything"</li></a>
-        <li class="current"><a href="gitsearch.html">Gitsearch</a></li>
-    </ul>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="ask_me_anything.html">Article: "Ask me Anything"</li></a>
+		<li class="current"><a href="gitsearch.html">Gitsearch</a></li>
+	</ul>
 </div>
 
 <body class="container">
-    <!--   placeholder image -->
-    <img class="post_img" src="media/gitsearch_ui.jpg">
-    
-    <div class="title_container">
-        <span class="post_title" id="post_title">Gitsearch</span>
-        <div class="post_title_underline" id="post_title_underline">&nbsp;</div>
-        <script type="text/javascript">
-            "use strict";
-            window.addEventListener("DOMContentLoaded", () => {
-                document.getElementById("post_title_underline")
-                        .innerHTML = "<br>"
-                                   + "=".repeat(document.getElementById("post_title")
-                                                        .textContent.length)
-                                   + "<br>";
-            });
-        </script>
-    </div>
-    
-    <p>
-        <a href="https://github.com/Keating950/gitsearch" target="_blank">Gitsearch</a> is a simple command line 
-        program that searches for and clones repos from Github. I wrote the program in Python, developing the interface
-        in curses and using GitHub's public API for the search and clone features. Given the difficulties of Python 
-        packaging and dependency management, I aimed to minimize external dependencies; Gitsearch has only one,
-        the widely used <a href="https://certifi.io">certifi</a> library. 
-    </p>
-    <footer>&nbsp;</footer>
-    <script type="text/javascript">
-        "use strict";
-        window.addEventListener("DOMContentLoaded", () => { 
-            document.getElementsByTagName("footer")[0].innerHTML =
-                `<a href=licence.html>Copyright © ${new Date().getFullYear()} Keating Kenna Reid.</a>`;
-        });
-    </script>
+	<!--   placeholder image -->
+	<img class="post_img" src="media/gitsearch_ui.jpg">
+	
+	<div class="title_container">
+		<span class="post_title" id="post_title">Gitsearch</span>
+		<div class="post_title_underline" id="post_title_underline">&nbsp;</div>
+		<script type="text/javascript">
+			"use strict";
+			window.addEventListener("DOMContentLoaded", () => {
+				document.getElementById("post_title_underline")
+						.innerHTML = "<br>"
+								   + "=".repeat(document.getElementById("post_title")
+														.textContent.length)
+								   + "<br>";
+			});
+		</script>
+	</div>
+	
+	<p>
+		<a href="https://github.com/Keating950/gitsearch" target="_blank">Gitsearch</a> is a simple command line 
+		program that searches for and clones repos from Github. I wrote the program in Python, developing the interface
+		in curses and using GitHub's public API for the search and clone features. Given the difficulties of Python 
+		packaging and dependency management, I aimed to minimize external dependencies; Gitsearch has only one,
+		the widely used <a href="https://certifi.io">certifi</a> library. 
+	</p>
+	<footer>&nbsp;</footer>
+	<script type="text/javascript">
+		"use strict";
+		window.addEventListener("DOMContentLoaded", () => { 
+			document.getElementsByTagName("footer")[0].innerHTML =
+				`<a href=licence.html>Copyright © ${new Date().getFullYear()} Keating Kenna Reid.</a>`;
+		});
+	</script>
 </body>
 </html>
