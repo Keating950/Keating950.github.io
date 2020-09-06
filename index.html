@@ -1,51 +1,51 @@
 <!DOCTYPE html>
 <head>
-    <meta charset="UTF-8">
-    <html lang="en">
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+	<meta charset="UTF-8">
+	<html lang="en">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
 <title>Keating K. Reid</title>
 </head>
-    
+	
 <div class="navbar_title"><a href="index.html">Keating K. Reid</a></div>
 <div class="navbar">
-    <ul>
-        <li class="current"><a href="index.html">Home</a></li>
-        <li><a href="ask_me_anything.html">Article: "Ask me Anything"</li></a>
-    <li><a href="gitsearch.html">Gitsearch</a></li>
-    </ul>
+	<ul>
+		<li class="current"><a href="index.html">Home</a></li>
+		<li><a href="ask_me_anything.html">Article: "Ask me Anything"</li></a>
+	<li><a href="gitsearch.html">Gitsearch</a></li>
+	</ul>
 </div>
-    
+	
 <body class="container">
-    <div class="title_container">
-        <span class="post_title" id="post_title">Who am I?</span>
-        <div class="post_title_underline" id="post_title_underline">&nbsp;</div>
-        <script> 
-                "use strict";
-                window.addEventListener("load", () => {
-                    document.getElementById("post_title_underline")
-                            .innerHTML = "<br>"
-                                       + "=".repeat(document.getElementById("post_title")
-                                                            .textContent.length)
-                                       + "<br>";
-                });
-        </script>
-    </div>
-        
-        <p >
-            My name is Keating, and I'm a programmer with experience in software 
-            development, data science, and machine learning. My favourite
-            languages are Python and C, but I'm always looking to learn more.
-            Links to some examples of my work are above. To get in touch, send
-            me an email <a href="#" id="comms">here</a>.
-        </p>
-    
-    <footer>&nbsp;</footer>
-    <script type="text/javascript">
-        "use strict";
-        window.addEventListener("load", () => { 
-            document.getElementsByTagName("footer")[0].innerHTML =
-                `<a href=licence.html>Copyright © ${new Date().getFullYear()} Keating Kenna Reid.</a>`;
-        });
-    </script>
+	<div class="title_container">
+		<span class="post_title" id="post_title">Who am I?</span>
+		<div class="post_title_underline" id="post_title_underline">&nbsp;</div>
+		<script> 
+				"use strict";
+				window.addEventListener("DOMContentLoaded", () => {
+					document.getElementById("post_title_underline")
+							.innerHTML = "<br>"
+									   + "=".repeat(document.getElementById("post_title")
+															.textContent.length)
+									   + "<br>";
+				});
+		</script>
+	</div>
+		
+		<p >
+			My name is Keating, and I'm a programmer with experience in software 
+			development, data science, and natural language processing/machine learning. 
+			My favourite languages are Python and C, but I'm always looking to learn more.
+			Links to some examples of my work are above. To get in touch, send
+			me an email <a href="#" id="comms">here</a>.
+		</p>
+	
+	<footer>&nbsp;</footer>
+	<script type="text/javascript">
+		"use strict";
+		window.addEventListener("DOMContentLoaded", () => { 
+			document.getElementsByTagName("footer")[0].innerHTML =
+				`<a href=licence.html>Copyright © ${new Date().getFullYear()} Keating Kenna Reid.</a>`;
+		});
+	</script>
 </body>
 </html>
