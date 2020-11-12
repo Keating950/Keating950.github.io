@@ -1,11 +1,19 @@
 @font-face {
-  font-family: "Fira Code";
-  src: url("FiraCode-Regular.woff2");
+  font-family: "Fira Sans";
+  src: url("FiraSans-Light.ttf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Fira Sans";
+  src: url("FiraSans-SemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
 }
 body {
   background-color: #282828;
   color: #FBF1C7;
-  font-family: "Fira Code";
+  font-family: "Fira Sans";
 }
 
 hr {
@@ -42,8 +50,7 @@ hr {
 .navbar ul li {
   text-overflow: ellipsis;
   display: inline;
-  margin-right: 40px;
-  white-space: inherit;
+  margin-right: 1vw;
 }
 .navbar ul li:hover {
   text-decoration: underline;
@@ -59,15 +66,11 @@ hr {
   text-decoration: inherit;
 }
 
-.title_container {
+.post_title {
   padding-top: 10px;
-}
-.title_container .post_title {
   font-size: 175%;
-}
-.title_container .post_title_underline {
-  font-size: 175%;
-  margin-top: -45px;
+  text-decoration: underline;
+  text-underline-offset: 0.35em;
 }
 
 .multi_img_container {
@@ -134,10 +137,6 @@ hr {
 
 .container {
   max-width: 60vw;
-  margin-left: 5vw;
-}
-.container > p {
-  max-width: 55rem;
 }
 .container > p a {
   color: #00FFFF;

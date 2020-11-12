@@ -40,27 +40,14 @@
 		
 	<p class="caption">Click images to view interactively.</p>
 	
-	<div class="title_container"> 
-		<span class="post_title" id="post_title">Ask me Anything</span> 
-		<div class="post_title_underline" id="post_title_underline">&nbsp;</div>
-		<script type="text/javascript">
-				"use strict";
-				window.addEventListener("DOMContentLoaded", () => {
-					document.getElementById("post_title_underline")
-							.innerHTML = "<br>"
-									   + "=".repeat(document.getElementById("post_title")
-															.textContent.length)
-									   + "<br>";
-				});
-		</script>
-	</div>
+	<span class="post_title" id="post_title">Ask me Anything</span> 
 	
 	<p> "<a href="http://www.mcgilltribune.com/ask-me-anything/"
 	target="_blank">Ask me Anything: Mining through the 10 year history of
 	/r/McGill"</a> is a feature-length data journalism project that I produced
 	with my colleague Kyle Dewsnap in the winter of 2019—2020. We scraped
 	every post in the subreddit's history (totalling over 30,000) from
-	Reddit's official API and enriched them with data from 
+	Reddit's API and enriched them with data from 
 	<a href="https://pushshift.io/" target="_blank">pushshift.io</a>. I then
 	applied various natural language processing techniques in Python, such as
 	k-means clustering and sentiment analysis; the notebook below shows some 

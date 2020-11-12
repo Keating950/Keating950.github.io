@@ -16,22 +16,14 @@
 </div>
 	
 <body class="container">
-	<div class="title_container">
-		<span class="post_title" id="post_title">Who am I?</span>
-		<div class="post_title_underline" id="post_title_underline">&nbsp;</div>
-		<script src="contact_onclick.js"></script>
-		<script> 
-				"use strict";
-				window.addEventListener("DOMContentLoaded", () => {
-					document.getElementById("post_title_underline")
-							.innerHTML = "<br>"
-									   + "=".repeat(document.getElementById("post_title")
-															.textContent.length)
-									   + "<br>";
-					document.getElementById("comms").addEventListener("click", contact)
-				});
-		</script>
-	</div>
+	<span class="post_title" id="post_title">Who am I?</span>
+	<script src="contact_onclick.js"></script>
+	<script> 
+			"use strict";
+			window.addEventListener("DOMContentLoaded", () => {
+				document.getElementById("comms").addEventListener("click", contact)
+			});
+	</script>
 		
 		<p >
 			My name is Keating, and I'm a programmer with experience in software 

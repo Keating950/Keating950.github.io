@@ -4,14 +4,23 @@ $foreground: #FBF1C7;
 $grey: #A89984;
 
 @font-face {
-	font-family: 'Fira Code';
-	src: url('FiraCode-Regular.woff2');
+	font-family: 'Fira Sans';
+	src: url('FiraSans-Light.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fira Sans';
+	src: url('FiraSans-SemiBold.ttf');
+	font-weight: bold;
+	font-style: normal;
 }
 
 body {
 	background-color: $background;
 	color: $foreground;
-	font-family: 'Fira Code';
+	font-family: 'Fira Sans';
 }
 
 hr {
@@ -66,15 +75,11 @@ hr {
 	}
 }
 
-.title_container {
+.post_title {
 	padding-top: 10px;
-	.post_title {
-		font-size: 175%;
-	}
-	.post_title_underline {
-		font-size: 175%;
-		margin-top: -45px;
-	}
+	font-size: 175%;
+	text-decoration: underline;
+	text-underline-offset: 0.35em;
 }
 
 .multi_img_container {
