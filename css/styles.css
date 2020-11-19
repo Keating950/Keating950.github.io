@@ -26,6 +26,7 @@ hr {
   white-space: nowrap;
   font-weight: bold;
   font-size: 260%;
+  letter-spacing: 0.2px;
   color: #B8BB26;
   text-decoration: none;
   margin: 0;
@@ -39,6 +40,7 @@ hr {
   width: 60vw;
   margin: 8px 0 36px 0;
   line-height: 180%;
+  letter-spacing: 0.2px;
   overflow: hidden;
 }
 .navbar ul {
@@ -68,6 +70,7 @@ hr {
 
 .post_title {
   padding-top: 10px;
+  letter-spacing: 0.2px;
   font-size: 175%;
   text-decoration: underline;
   text-underline-offset: 0.35em;
@@ -87,13 +90,14 @@ hr {
   flex: flex-basis;
 }
 
-/** LIGHTBOX MARKUP **/
+/* 
+ * Lightbox
+ */
 .thumbnail {
   max-width: 95%;
 }
 
 .lightbox {
-  /** Default lightbox to hidden */
   display: none;
   position: fixed;
   z-index: 999;
