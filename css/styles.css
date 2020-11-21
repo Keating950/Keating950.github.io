@@ -1,12 +1,12 @@
 @font-face {
   font-family: "Fira Sans";
-  src: url("FiraSans-Light.ttf");
+  src: url("FiraSans-Light.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "Fira Sans";
-  src: url("FiraSans-SemiBold.ttf");
+  src: url("FiraSans-SemiBold.woff2") format("woff2");
   font-weight: bold;
   font-style: normal;
 }
@@ -14,6 +14,7 @@ body {
   background-color: #282828;
   color: #FBF1C7;
   font-family: "Fira Sans";
+  font-style: normal;
 }
 
 hr {

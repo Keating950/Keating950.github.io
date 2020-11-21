@@ -4,23 +4,25 @@ $foreground: #FBF1C7;
 $grey: #A89984;
 
 @font-face {
-	font-family: 'Fira Sans';
-	src: url('FiraSans-Light.ttf');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'Fira Sans';
+    src: url('FiraSans-Light.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 @font-face {
-	font-family: 'Fira Sans';
-	src: url('FiraSans-SemiBold.ttf');
-	font-weight: bold;
-	font-style: normal;
+    font-family: 'Fira Sans';
+    src: url('FiraSans-SemiBold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
 }
 
 body {
 	background-color: $background;
 	color: $foreground;
 	font-family: 'Fira Sans';
+	font-style: normal;
 }
 
 hr {
@@ -183,3 +185,4 @@ footer {
 		color: $foreground;
 	}
 }
+
