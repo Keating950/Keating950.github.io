@@ -1,6 +1,6 @@
 @font-face {
   font-family: "Fira Sans";
-  src: url("FiraSans-Light.woff2") format("woff2");
+  src: url("FiraSans-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
 }
@@ -31,6 +31,10 @@ hr {
   color: #B8BB26;
   text-decoration: none;
   margin: 0;
+}
+
+.main_text {
+  line-height: 1.3;
 }
 
 .navbar {
@@ -162,7 +166,7 @@ hr {
 
 footer {
   display: block;
-  font-size: 50%;
+  font-size: 70%;
   text-align: center;
   opacity: 35%;
   webkit-opacity: 0.35;
