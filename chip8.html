@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<html lang="en">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Keating K. Reid</title>
+</head>
+
+<div class="navbar_title"><a href="index.html">Keating K. Reid</a></div>
+<div class="navbar">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="ask_me_anything.html">Article: "Ask me Anything"</li></a>
+		<li><a href="gitsearch.html">Gitsearch</a></li>
+		<li class="current"><a href="chip8.html">CHIP-8 emulator</a></li>
+	</ul>
+</div>
+
+<body class="container">
+	<img class="post_img" src="media/chip8.gif">
+	<div class="title_container">
+		<span class="post_title" id="post_title">CHIP-8 emulator</span>
+	</div>
+	
+	<p class="main_text">
+		In the summer of 2020, I wrote a <a href="https://github.com/Keating950/chip8">CHIP-8 emulator</a> in C. Inspired by
+        Mathew Zaleski's disseration
+        "<a href="http://www.cs.toronto.edu/~matz/dissertation/matzDissertation-latex2html/node6.html">YETI: a graduallY
+        Extensible Trace Interpreter</a>", I wrote the main emulation loop in a threaded-interpreter style, which
+		reduces function call overhead in the host machine. the result is very efficient, typically O(1) dispatch of virtual instructions.
+		The emulator requires only the <a href="https://libsdl.org/download-2.0.php">SDL2</a> library to build and is fully cross-platform
+		compatible.
+	</p>
+	<footer>&nbsp;</footer>
+	<script type="text/javascript">
+		"use strict";
+		window.addEventListener("DOMContentLoaded", () => { 
+			document.getElementsByTagName("footer")[0].innerHTML =
+				`<a href=licence.html>Copyright © ${new Date().getFullYear()} Keating Kenna Reid.</a>`;
+		});
+	</script>
+</body>
+</html>
