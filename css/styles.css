@@ -15,6 +15,7 @@ body {
   color: #FBF1C7;
   font-family: "Fira Sans";
   font-style: normal;
+  font-size: max(12pt, 2vmin);
 }
 
 hr {
@@ -74,11 +75,9 @@ hr {
 }
 
 .post_title {
-  padding-top: 10px;
+  margin-bottom: 0.5em;
   letter-spacing: 0.2px;
   font-size: 175%;
-  text-decoration: underline;
-  text-underline-offset: 0.35em;
 }
 
 .multi_img_container {

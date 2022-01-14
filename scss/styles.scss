@@ -8,7 +8,6 @@ $grey: #A89984;
     src: url('FiraSans-Regular.woff2') format('woff2');
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
@@ -23,6 +22,7 @@ body {
 	color: $foreground;
 	font-family: 'Fira Sans';
 	font-style: normal;
+    font-size: max(12pt, 2vmin);
 }
 
 hr {
@@ -84,11 +84,9 @@ hr {
 }
 
 .post_title {
-	padding-top: 10px;
+	margin-bottom: 0.5em;
 	letter-spacing: 0.2px;
 	font-size: 175%;
-	text-decoration: underline;
-	text-underline-offset: 0.35em;
 }
 
 .multi_img_container {
