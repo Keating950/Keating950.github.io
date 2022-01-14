@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<head>
+	<html lang="en">
+	<meta charset="UTF-8">
+    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+    <title>Keating K. Reid</title>
+</head>
+	
+<div class="navbar_title"><a href="index.html">Keating K. Reid</a></div>
+<div class="navbar">
+	<ul>
+        {% for item in pages -%}
+            {%- if item == page -%}
+            <li class="current">{{item.bar_title}}</li>
+            {%- else -%}
+            <li><a href="{{item.filename}}">{{item.bar_title}}</li></a>
+            {%- endif -%}
+        {%- endfor %}
+	</ul>
+</div>
+	
+<body class="container">
+<span class="post_title" id="post_title">{{page.title}}</span>
+{% if page.image_html is not none %}
+    {{page.image_html}}
+{% endif %}
+{{page.text}}
+
+<footer>&nbsp;</footer>
+<script type="text/javascript">
+    "use strict";
+    window.addEventListener("DOMContentLoaded", () => { 
+        document.getElementsByTagName("footer")[0].innerHTML =
+            `<a href=licence.html>Copyright © ${new Date().getFullYear()} Keating Kenna Reid.</a>`;
+    });
+</script>
+</body>
+</html>
