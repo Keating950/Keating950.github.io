@@ -7,71 +7,65 @@
     <title>Keating K. Reid</title>
 </head>
 	
-<div class="navbar_title"><a href="index.html">Keating K. Reid</a></div> 
+<div class="navbar_title"><a href="index.html">Keating K. Reid</a></div>
 <div class="navbar">
 	<ul>
-		<li><a href="index.html">Home</a></li> 
-		<li class="current">Article: "Ask me Anything"</li>
-		<li><a href="gitsearch.html">Gitsearch</a></li>
-		<li><a href="chip8.html">CHIP-8 emulator</a></li>
+        <li><a href="index.html">Home</li></a><li class="current">Article: Ask me anything</li><li><a href="chip8.html">CHIP-8 emulator</li></a><li><a href="gitsearch.html">Gitsearch</li></a>
 	</ul>
 </div>
-
+	
 <body class="container">
-	<div class="multi_img_container">
-		<!-- Item 1 -->
-		<a href=#img1> 
-			<img src="media/thumbnails/posts_per_year_tb.gif"  class="thumbnail"> 
-		</a>
-		<a href="#_" class="lightbox" id="img1"> 
-			<iframe src="iframe_figures/posts_per_year.html"  class="lightbox_iframe" 
-					id="posts_per_year"></iframe> 
-		</a>
-		<!-- Item 2 --> 
-		<a href=#img2> 
-			<img src="media/thumbnails/upvotes_by_time_tb.gif"	class="thumbnail"> 
-		</a>
-		<a href="#_" class="lightbox" id="img2"> 
-			<iframe
-				src="iframe_figures/upvotes_by_time.html"
-				class="lightbox_iframe"
-				id="upvotes_by_time">
-			</iframe> 
-		</a>
-	</div>
-		
-	<p class="caption">Click images to view interactively.</p>
-	
-	<span class="post_title" id="post_title">Ask me Anything</span> 
-	
-	<p class="main_text"> "<a href="http://www.mcgilltribune.com/ask-me-anything/"
-	target="_blank">Ask me Anything: Mining through the 10 year history of
-	/r/McGill"</a> is a feature-length data journalism project that I produced
-	with my colleague Kyle Dewsnap in the winter of 2019—2020. We scraped
-	every post in the subreddit's history (totalling over 30,000) from
-	Reddit's API and enriched them with data from 
-	<a href="https://pushshift.io/" target="_blank">pushshift.io</a>. I then
-	applied various natural language processing techniques in Python, such as
-	k-means clustering and sentiment analysis; the notebook below shows some 
-	examples of my work. </p>
-	
-<!--	Datalore embed--> 
-	<iframe  
-		 height="700px" 
-		 width=100%
-		 src="https://view.datalore.io/notebook/9aNxaBkR9tWJkybtWeAw6p"
-		 style="margin-top: 36px;  background-color: rgb(238, 238, 238);"
-		 allowTransparency="false"> 
-	</iframe>
-	
-	<footer>&nbsp;</footer> 
-	
-	<script type="text/javascript">
-		"use strict";
-		window.addEventListener("DOMContentLoaded", () => { 
-			document.getElementsByTagName("footer")[0].innerHTML =
-				`<a href=licence.html>Copyright © ${new Date().getFullYear()} Keating Kenna Reid.</a>`;
-		});
-	</script>
-</body> 
+<span class="post_title" id="post_title">Ask me anything</span>
+
+    <div class="multi_img_container">
+    <!-- Item 1 -->
+    <a href=#img1> 
+        <img src="media/thumbnails/posts_per_year_tb.gif"  class="thumbnail"> 
+    </a>
+    <a href="#_" class="lightbox" id="img1"> 
+        <iframe src="iframe_figures/posts_per_year.html"  class="lightbox_iframe" 
+                id="posts_per_year"></iframe> 
+    </a>
+    <!-- Item 2 --> 
+    <a href=#img2> 
+        <img src="media/thumbnails/upvotes_by_time_tb.gif"	class="thumbnail"> 
+    </a>
+    <a href="#_" class="lightbox" id="img2"> 
+        <iframe
+            src="iframe_figures/upvotes_by_time.html"
+            class="lightbox_iframe"
+            id="upvotes_by_time">
+        </iframe> 
+    </a>
+</div>
+<p class="caption">Click images to view interactively.</p>
+
+<p class="main_text"> 
+"<a href="http://www.mcgilltribune.com/ask-me-anything/" target="_blank">Ask me
+Anything: Mining through the 10 year history of /r/McGill"</a> is a
+feature-length data journalism project that I produced with my colleague Kyle
+Dewsnap in the winter of 2019—2020. We scraped every post in the subreddit's
+history (totalling over 30,000) from Reddit's API and enriched them with data
+from <a href="https://pushshift.io/" target="_blank">pushshift.io</a>. I then
+applied various natural language processing techniques in Python, such as
+k-means clustering and sentiment analysis; the notebook below shows some
+examples of my work. 
+</p>
+<iframe  
+     height="700px" 
+     width=100%
+     src="https://view.datalore.io/notebook/9aNxaBkR9tWJkybtWeAw6p"
+     style="margin-top: 36px;  background-color: rgb(238, 238, 238);"
+     allowTransparency="false"> 
+</iframe>
+
+<footer>&nbsp;</footer>
+<script type="text/javascript">
+    "use strict";
+    window.addEventListener("DOMContentLoaded", () => { 
+        document.getElementsByTagName("footer")[0].innerHTML =
+            `<a href=licence.html>Copyright © ${new Date().getFullYear()} Keating Kenna Reid.</a>`;
+    });
+</script>
+</body>
 </html>
