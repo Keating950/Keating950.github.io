@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 from dataclasses import dataclass
 import yaml
-from typing import Optional
+from typing import Optional, List
 import re
 from pathlib import Path
 import sys
@@ -53,13 +53,22 @@ def parse_args(arg_list):
     return args
 
 
+def sort_pages(pages: List[Page]):
+    homepage, rest = [], []
+    for pg in pages:
+        (rest, homepage)[pg.bar_title == "Home"].append(pg)
+    if len(homepage) == 0:
+        raise ValueError("No homepage provided")
+    return homepage + sorted(rest, key=lambda p: p.bar_title)
+
+
 def main():
     args = parse_args(sys.argv[1:])
     j2_env = Environment(
         loader=FileSystemLoader("."), autoescape=False, undefined=StrictUndefined
     )
     template = j2_env.get_template(TEMPLATE)
-    pages = [Page(fp) for fp in args.files]
+    pages = sort_pages([Page(fp) for fp in args.files])
     for pg in pages:
         with open(pg.filename, "w") as f:
             rendered = template.render(page=pg, pages=pages)
