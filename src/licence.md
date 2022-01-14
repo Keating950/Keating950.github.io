@@ -1,22 +1,7 @@
-<!DOCTYPE html>
-<head>
-	<html lang="en">
-	<meta charset="UTF-8">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
-	<link rel="stylesheet" type="text/css" href="css/styles.css">
-    <title>Keating K. Reid</title>
-</head>
-	
-<div class="navbar_title"><a href="index.html">Keating K. Reid</a></div>
-<div class="navbar">
-	<ul>
-        <li><a href="index.html">Home</li></a><li><a href="ask_me_anything.html">Article: Ask me anything</li></a><li><a href="chip8.html">CHIP-8 emulator</li></a><li><a href="gitsearch.html">Gitsearch</li></a><li><a href="nlp.html">Presentation: NLP topic analysis</li></a>
-	</ul>
-</div>
-	
-<body class="container">
-<div class="post_title" id="post_title">Licence</div>
-
+---
+title: Licence
+bar_exclude: true
+---
 <p class="main_text">
     The source code of this website — that is, its HTML, (S)CSS, and 
     Javascript — are free to use under the terms of the MIT licence,
@@ -49,14 +34,3 @@
    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
    SOFTWARE. 
 </p>
-
-<footer>&nbsp;</footer>
-<script type="text/javascript">
-    "use strict";
-    window.addEventListener("DOMContentLoaded", () => { 
-        document.getElementsByTagName("footer")[0].innerHTML =
-            `<a href=licence.html>Copyright © ${new Date().getFullYear()} Keating Kenna Reid.</a>`;
-    });
-</script>
-</body>
-</html>

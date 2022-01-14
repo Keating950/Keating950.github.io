@@ -10,7 +10,7 @@
 <div class="navbar_title"><a href="index.html">Keating K. Reid</a></div>
 <div class="navbar">
 	<ul>
-        {% for item in pages -%}
+        {% for item in pages|selectattr("bar_exclude", 'false') -%}
             {%- if item == page -%}
             <li class="current">{{item.bar_title}}</li>
             {%- else -%}

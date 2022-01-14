@@ -16,6 +16,7 @@ class Page:
     title: str
     filename: str
     bar_title: str
+    bar_exclude: bool
     image_html: Optional[str]
     text: str
 
@@ -27,15 +28,26 @@ class Page:
         if not yaml_text or len(yaml_text.groups()) < 1:
             raise ValueError(f"No YAML header found for file {filepath}")
         try:
-            header_data = yaml.load(yaml_text.group(1), Loader=yaml.Loader)
-            self.title = header_data["title"]
+            header = yaml.load(yaml_text.group(1), Loader=yaml.Loader)
+            self.title = header["title"]
             self.filename = Path(filepath).with_suffix(".html").name
-            self.bar_title = header_data.get("bar_title", header_data["title"])
-            if img := header_data.get("image_html"):
+            if exclude := header.get("bar_exclude"):
+                if type(exclude) != bool:
+                    raise ValueError(f"{exclude} is not a boolean value")
+                self.bar_exclude = exclude
+            else:
+                self.bar_exclude = False
+            if bar_title := header.get("bar_title"):
+                if self.bar_exclude:
+                    raise ValueError("bar_exclude is incompatible with bar_title")
+                self.bar_title = bar_title
+            else:
+                self.bar_title = self.title
+            if img := header.get("image_html"):
                 self.image_html = img.strip()
             else:
                 self.image_html = None
-        except yaml.scanner.ScannerError as e:
+        except (yaml.scanner.ScannerError, ValueError) as e:
             e.args = f"Error parsing {filepath}", e.args[1:]
             raise
         except KeyError as e:
