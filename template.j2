@@ -5,7 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>Keating K. Reid</title>
 </head>
-	
 <div class="navbar_title"><a href="index.html">Keating K. Reid</a></div>
 <div class="navbar">
 	<ul>
@@ -18,14 +17,10 @@
         {%- endfor %}
 	</ul>
 </div>
-	
 <body class="container">
 <div class="post_title" id="post_title">{{page.title}}</div>
-{% if page.image_html is not none %}
-    {{page.image_html}}
-{% endif %}
+{% if page.image_html is not none %} {{page.image_html}} {% endif %}
 {{page.text}}
-
 <footer>&nbsp;</footer>
 <script type="text/javascript">
     "use strict";
