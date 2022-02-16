@@ -17,6 +17,7 @@ class Page:
     filename: str
     bar_title: str
     bar_exclude: bool
+    bar_order: Optional[int]
     image_html: Optional[str]
     text: str
 
@@ -37,6 +38,13 @@ class Page:
                 self.bar_exclude = exclude
             else:
                 self.bar_exclude = False
+            if order := header.get("bar_order"):
+                if self.bar_exclude:
+                    raise ValueError("bar_order and bar_exclude are mutually exclusive")
+                else:
+                    self.bar_order = order
+            else:
+                self.bar_order = None
             if bar_title := header.get("bar_title"):
                 if self.bar_exclude:
                     raise ValueError("bar_exclude is incompatible with bar_title")
@@ -71,7 +79,12 @@ def sort_pages(pages: List[Page]):
         (rest, homepage)[pg.bar_title == "Home"].append(pg)
     if len(homepage) == 0:
         raise ValueError("No homepage provided")
-    return homepage + sorted(rest, key=lambda p: p.bar_title)
+    return homepage + sorted(
+        rest,
+        key=lambda pg: float(pg.bar_order)
+        if pg.bar_order is not None
+        else float("Inf"),
+    )
 
 
 def main():
