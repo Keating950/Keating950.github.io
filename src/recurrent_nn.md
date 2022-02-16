@@ -1,5 +1,6 @@
 ---
 title: "News topic classification via neural networks"
+bar_order: 2
 bar_title: "Project: NLP with neural networks"
 ---
 	
@@ -13,7 +14,7 @@ sentences.
 <iframe  
      height="700px" 
      width=100%
-     src="https://datalore.jetbrains.com/notebook/3WQYoLye2AC9rSbF7XdtYV/qnbjgE8JwBO6YalDWf5M5w/"
+     src="https://datalore.jetbrains.com/view/notebook/Uu0CaQqRgGFqcRirY0mBAo"
      style="margin-top: 36px;  background-color: rgb(238, 238, 238);"
      allowTransparency="false"> 
 </iframe>

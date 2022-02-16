@@ -1,6 +1,7 @@
 ---
 title: CHIP-8 emulator
 image_html: <img class="post_img" src="media/chip8.gif">
+bar_order: 3
 ---
 	
 <p class="main_text">

@@ -1,6 +1,7 @@
 ---
 title: "Ask me anything"
 bar_title: "Article: Ask me anything"
+bar_order: 1
 image_html: |+
     <div class="multi_img_container">
         <!-- Item 1 -->
