@@ -1,5 +1,6 @@
 ---
-title: Who am I?
+title: Keating K. Reid
+article_title: Who am I?
 bar_title: Home
 ---
 <p class="main_text">My name is Keating, and I'm a programmer with experience in software 

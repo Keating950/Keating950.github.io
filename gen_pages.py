@@ -17,6 +17,7 @@ class Page:
     filename: str
     bar_title: str
     bar_exclude: bool
+    article_title: Optional[str]
     bar_order: Optional[int]
     image_html: Optional[str]
     text: str
@@ -55,6 +56,7 @@ class Page:
                 self.image_html = img.strip()
             else:
                 self.image_html = None
+            self.article_title = header.get("article_title")
         except (yaml.scanner.ScannerError, ValueError) as e:
             e.args = f"Error parsing {filepath}", e.args[1:]
             raise

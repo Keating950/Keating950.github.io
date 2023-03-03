@@ -1,5 +1,6 @@
 ---
-title: "News topic classification via neural networks"
+title: "NLP with neural networks"
+article_title: "News topic classification via neural networks"
 bar_order: 2
 bar_title: "Project: NLP with neural networks"
 ---
