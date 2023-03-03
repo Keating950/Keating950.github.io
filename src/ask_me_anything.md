@@ -27,7 +27,7 @@ image_html: |+
     <p class="caption">Click images to view interactively.</p>
 ---
 	
-<p class="main_text"> 
+<p> 
 "<a href="http://www.mcgilltribune.com/ask-me-anything/" target="_blank">Ask me
 Anything: Mining through the 10 year history of /r/McGill"</a> is a
 feature-length data journalism project that I produced as a McGill student in

@@ -18,16 +18,18 @@
 	</ul>
 </div>
 <body class="container">
-<div class="post_title" id="post_title">{{page.title}}</div>
-{% if page.image_html is not none %} {{page.image_html}} {% endif %}
-{{page.text}}
-<footer>&nbsp;</footer>
-<script type="text/javascript">
-    "use strict";
-    window.addEventListener("DOMContentLoaded", () => { 
-        document.getElementsByTagName("footer")[0].innerHTML =
-            `<a href=licence.html>Copyright © ${new Date().getFullYear()} Keating Kenna Reid.</a>`;
-    });
-</script>
+    <article>
+        <div class="post_title">{{page.title}}</div>
+        {% if page.image_html is not none %} {{page.image_html}} {% endif %}
+        {{page.text}}
+    </article>
+    <footer>&nbsp;</footer>
+    <script type="text/javascript">
+        "use strict";
+        window.addEventListener("DOMContentLoaded", () => { 
+            document.getElementsByTagName("footer")[0].innerHTML =
+                `<a href=licence.html>Copyright © ${new Date().getFullYear()} Keating Kenna Reid.</a>`;
+        });
+    </script>
 </body>
 </html>
