@@ -32,7 +32,7 @@ hr {
 	opacity: 0.5;
 }
 
-.navbar_title a {
+header a {
 	white-space: nowrap;
 	font-weight: bold;
 	font-size: 260%;
@@ -48,7 +48,7 @@ article, .licence_year {
     display: inline-block;
 }
 
-.navbar {
+nav {
 	color: $green;
 	border-style: dashed;
 	border-color: $green;

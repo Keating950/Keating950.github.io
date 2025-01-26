@@ -5,8 +5,8 @@
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>{{page.title}}</title>
 </head>
-<div class="navbar_title"><a href="index.html">Keating K. Reid</a></div>
-<div class="navbar">
+<header><a href="index.html">Keating K. Reid</a></header>
+<nav>
 	<ul>
         {% for item in pages|selectattr("bar_exclude", 'false') -%}
             {%- if item == page -%}
@@ -16,17 +16,19 @@
             {%- endif -%}
         {%- endfor %}
 	</ul>
-</div>
+</nav>
 <body class="container">
     <article>
-        <div class="post_title">
-            {%- if page.article_title is not none -%}
-              {{page.article_title}} 
-            {%- else -%} 
-              {{page.title}} 
-            {%- endif -%}
-        </div>
-        {% if page.image_html is not none %} {{page.image_html}} {% endif %}
+        <header>
+            <h1 class="post_title">
+                {%- if page.article_title is not none -%}
+                {{page.article_title}}
+                {%- else -%}
+                {{page.title}}
+                {%- endif -%}
+            </h1>
+            {% if page.image_html is not none %} {{page.image_html}} {% endif %}
+        </header>
         {{page.text}}
     </article>
     <footer>&nbsp;</footer>
