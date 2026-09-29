@@ -1,11 +1,12 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-	<html lang="en">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
     <title>{{page.title}}</title>
 </head>
+<body class="container">
 <header><a href="index.html">Keating K. Reid</a></header>
 <nav>
 	<ul>
@@ -13,12 +14,11 @@
             {%- if item == page -%}
             <li class="current">{{item.bar_title}}</li>
             {%- else -%}
-            <li><a href="{{item.filename}}">{{item.bar_title}}</li></a>
+            <li><a href="{{item.filename}}">{{item.bar_title}}</a></li>
             {%- endif -%}
         {%- endfor %}
 	</ul>
 </nav>
-<body class="container">
     <article>
         <header>
             <h1 class="post_title">
